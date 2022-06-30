@@ -116,6 +116,9 @@ add_subdirectory(trajectoryanalysis)
 add_subdirectory(energyanalysis)
 add_subdirectory(tools)
 
+# [FLOW_FIELD] Add module
+add_subdirectory(flow)
+
 get_property(PROPERTY_SOURCES GLOBAL PROPERTY GMX_LIBGROMACS_SOURCES)
 list(APPEND LIBGROMACS_SOURCES ${GMXLIB_SOURCES} ${MDLIB_SOURCES} ${PROPERTY_SOURCES})
 
